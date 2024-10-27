@@ -2,11 +2,15 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 
 
+
 export default function Header() {
     return (
-        <div className='flex justify-between align-middle bg-gray-500 items-center py-2 px-5'>
+        <div className='flex justify-between align-middle bg-[#232A35] items-center py-2 px-5'>
             {/* LOGO */}
-            <div className='font-bold text-2xl w-[10%]'>VERIFY IT!</div>
+
+            <div className='font-bold text-2xl w-[10%] text-[#2279CC]'>
+                <img src="src\assets\Logo.svg" alt="" srcset="" />
+            </div>
             {/* Search Bar */}
             <form class=" max-w-md mx-auto w-[75%]">
                 <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
@@ -21,7 +25,7 @@ export default function Header() {
                 </div>
             </form>
             {/* Nav Bar */}
-            <div className='font-semibold' >
+            <div className='font-semibold text-[#C7D7ED]' >
                 <ul className='flex space-x-5'>
                     <li><NavLink to={"/"}>Home</NavLink></li>
                     <li><NavLink to={"/About"}>About</NavLink></li>

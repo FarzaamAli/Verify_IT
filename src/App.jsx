@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Header from './components/header/Header'
+import CircularPercentageBar from './utilities/circlularProgressBar'
+
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -38,6 +38,7 @@ function App() {
             </div>
             {/* Detail */}
             <div className='rounded-b-lg  bg-gray-100 py-5 px-5 font-semibold'>
+
               <div>
                 Engro Corporation Limited is a Pakistani conglomerate headquartered in Karachi. Its businesses include energy, petrochemicals, fertilizers, port terminals, and telecommunications towers. Engro was founded as Esso Fertilizer in 1965.
               </div>
@@ -46,20 +47,24 @@ function App() {
 
           {/* Score Div */}
 
-          <div className='w-[30%] mx-7 mt-14 p-3 bg-gray-200 rounded-lg'>
+          <div className='w-[30%]  mx-7 mt-14  pt-0 bg-gray-200 rounded-lg'>
+            <div className='rounded-t-lg bg-blue-500 text-center text-[20px] font-semibold items-center mx-auto h-10 '>
+              Analystics
+            </div>
             {/* Percentage wheel */}
-            <div className='bg-slate-300 w-[75%] mx-auto'>
-              <img src="src\assets\pc.jpg" alt="" srcset="" />
+            <div className='w-fit bg-slate-400 mx-auto'>
+              <CircularPercentageBar targetPercentage={80} />
             </div>
 
             {/* Score Prespective */}
             <div className='bg-slate-400 px-5 mx-auto w-[70%] font-semibold'>
-                <ul>
-                  <li>Legal : 10</li>
-                  <li>Financial : 10</li>
-                  <li>Social : 10</li>
-                  <li>Technical : 10</li>
-                </ul>
+              <ul>
+                <li>Legal : 10</li>
+
+                <li>Financial : 10</li>
+                <li>Social : 10</li>
+                <li>Technical : 10</li>
+              </ul>
             </div>
 
           </div>
