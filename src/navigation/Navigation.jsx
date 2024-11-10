@@ -6,6 +6,7 @@ import {
 import App from '../App';
 import Layout from '../Layout/Layout';
 import DetailPage from '../pages/detailPage/DetailPage';
+import Contact from '../pages/contact/Contact';
 
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
             {
               path: "/detailPage",
               element: <DetailPage />
+            },
+            {
+              path: "/contact",
+              element: <Contact />
             },
             ] 
     },

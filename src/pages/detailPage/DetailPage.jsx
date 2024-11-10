@@ -5,7 +5,7 @@ export default function DetailPage() {
     return (
         <>
 
-            <div className='bg-[#1B2127] p-10 rounded-b-xl' >
+            <div className='dark:bg-[#1B2127] bg-[#F2F5F8] p-10 rounded-b-xl' >
                 <div className='flex items-center'>
                     {/* Company Logo */}
                     <div className='absolute rounded-full w-[119px] h-[119px] text-center flex items-center justify-center bg-blue-300 '>
@@ -80,7 +80,7 @@ export default function DetailPage() {
                         </div>
                         {/* Percentage wheel */}
                         <div className='w-fit mx-auto my-12'>
-                            <CircularPercentageBar targetPercentage={84} />
+                            <CircularPercentageBar targetPercentage={76} />
                         </div>
 
                         {/* Score Prespective */}
