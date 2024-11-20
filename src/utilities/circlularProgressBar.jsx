@@ -28,7 +28,7 @@ const CircularPercentageBar = ({ targetPercentage }) => {
         styles={buildStyles({
           pathColor: '#2a6ba5',
           textColor: '#2a6ba5',
-          trailColor: '#181D22',
+          trailColor: '#D9E0EB',
         })}
       />
     </div>

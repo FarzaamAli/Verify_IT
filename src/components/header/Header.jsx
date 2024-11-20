@@ -9,7 +9,7 @@ export default function Header() {
             {/* LOGO */}
 
             <div className='font-bold text-2xl w-[10%] text-[#2279CC]'>
-                <img src="src\assets\Logo.svg" alt="" srcset="" />
+                <img src="src\assets\logo_light.svg" className='dark:invert dark:hover:invert-0 hover:invert' alt="" srcset="" />
             </div>
             {/* Search Bar */}
             <form class=" max-w-md mx-auto w-[75%]">
@@ -25,11 +25,14 @@ export default function Header() {
                 </div>
             </form>
             {/* Nav Bar */}
-            <div className='font-semibold dark:text-[#C7D7ED]' >
+            <div className='font-semibold ' >
                 <ul className='flex space-x-5'>
-                    <li><NavLink to={"/"}>Home</NavLink></li>
-                    <li><NavLink to={"/About"}>About</NavLink></li>
-                    <li><NavLink to={"/Contact"}>Contact</NavLink></li>
+                    <li ><NavLink className={({ isActive }) =>
+                        isActive ? "text-[#35568B]" : "dark:text-[#C7D7ED] text-black"} to={"/"}>Home</NavLink></li>
+                    <li><NavLink className={({ isActive }) =>
+                        isActive ? "text-[#35568B]" : "dark:text-[#C7D7ED] text-black"} to={"/About"}>About</NavLink></li>
+                    <li><NavLink className={({ isActive }) =>
+                        isActive ? "text-[#35568B]" : "dark:text-[#C7D7ED] text-black"} to={"/Contact"}>Contact</NavLink></li>
                 </ul>
             </div>
         </div>

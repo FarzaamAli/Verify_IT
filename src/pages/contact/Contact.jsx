@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 export default function Contact() {
   return (
     <>
 
       <div className='dark:bg-[#1B2127] bg-[#F2F5F8] rounded-b-xl  p-10 flex'>
         {/* Info main Div */}
-        <div className='p-14 pt-20 w-[35%] h-[732px] rounded-xl text-white bg-gradient-to-b from-[#305b9a]  to-[#1c4686] '>
+        <div className='p-14 pt-20 w-[35%] h-[732px] rounded-xl text-white bg-gradient-to-b from-[#091e65]  to-[#305b9a] '>
           {/* Text Div */}
           <div className='mb-16 space-y-1'>
             <p className='font-semibold text-[18px]'>Send Message</p>
